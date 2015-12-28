@@ -42,7 +42,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'finance-opt-tools'
-AUTHORS = u"Shen Wang, Fady Shoukry, Azamat, Ben Wang, Theo S"
+AUTHORS = u"Shen Wang, Fady Shoukry, Azamat Berdyshev, Ben Wang, Theofilos Sotiropoulos-Michalakakos"
 copyright = u'2015, '+AUTHORS
 
 # The version info for the project you're documenting, acts as replacement for
