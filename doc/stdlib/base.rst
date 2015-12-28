@@ -1,0 +1,7 @@
+.. currentmodule:: Base
+
+************
+ Essentials
+************
+
+Placeholder
