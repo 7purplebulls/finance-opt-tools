@@ -1,4 +1,3 @@
-
 .. _manual-index:
 
 ###############################
@@ -9,3 +8,4 @@
    :maxdepth: 1
 
    introduction
+   functions

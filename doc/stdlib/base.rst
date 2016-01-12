@@ -1,3 +1,5 @@
+.. _stdlib-base:
+
 .. currentmodule:: Base
 
 ************
@@ -5,3 +7,5 @@
 ************
 
 Placeholder
+
+

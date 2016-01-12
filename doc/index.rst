@@ -3,6 +3,8 @@
  financial-opt-tools Documentation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Note of Importance, when adding a new document to the tree, make sure to MAKE CLEAN, then MAKE HTML, or else it'll be missing index values
+
 * :ref:`manual`
 * :ref:`stdlib`
 * :ref:`devdocs`
@@ -17,6 +19,7 @@
    :maxdepth: 1
 
    manual/introduction
+   manual/functions
 
 .. _stdlib:
 
@@ -28,6 +31,7 @@
    :maxdepth: 1
 
    stdlib/base
+   stdlib/collections
 
 .. _devdocs:
 
