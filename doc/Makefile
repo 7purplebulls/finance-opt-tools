@@ -15,20 +15,22 @@ ALLSPHINXOPTS   = -d _build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
-JULIA_ENV     = $(JULIAHOME)/deps/julia-env
-ACTIVATE      = $(JULIA_ENV)/bin/activate
-SPHINX_BUILD  = $(JULIA_ENV)/bin/sphinx-build
+# JULIA_ENV     = $(JULIAHOME)/deps/julia-env
+# ACTIVATE      = $(JULIA_ENV)/bin/activate
+# SPHINX_BUILD  = $(JULIA_ENV)/bin/sphinx-build
 
-$(ACTIVATE):
-	$(MAKE) -C $(JULIAHOME)/deps install-virtualenv
-	touch -c $@
+# $(ACTIVATE):
+# 	$(MAKE) -C $(JULIAHOME)/deps install-virtualenv
+# 	touch -c $@
 
-$(SPHINX_BUILD): $(ACTIVATE) requirements.txt
-	. $(ACTIVATE) && pip install sphinx==1.3.1 \
-	              && pip install -r requirements.txt
-	touch -c $@
+# $(SPHINX_BUILD): $(ACTIVATE) requirements.txt
+# 	. $(ACTIVATE) && pip install sphinx==1.3.1 \
+# 	              && pip install -r requirements.txt
+# 	touch -c $@
 
 SPHINXBUILD = . $(ACTIVATE) && sphinx-build
+
+SPHINXBUILD = .
 
 .PHONY: help clean cleanall html dirhtml singlehtml pickle json htmlhelp qthelp devhelp \
 	epub latex latexpdf text man changes linkcheck doctest gettext
