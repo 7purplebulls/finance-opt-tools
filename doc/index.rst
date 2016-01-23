@@ -44,3 +44,16 @@ Developer Documentation
    :maxdepth: 2
 
    devdocs/julia
+
+ 
+.. _tut:
+
+################
+Getting Started
+################
+
+.. toctree::
+   :maxdepth: 2
+
+   tut/index
+   
