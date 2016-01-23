@@ -8,6 +8,7 @@ Note of Importance, when adding a new document to the tree, make sure to MAKE CL
 * :ref:`manual`
 * :ref:`stdlib`
 * :ref:`devdocs`
+* :ref:`tut`
 
 .. _manual:
 
