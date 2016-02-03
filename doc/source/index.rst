@@ -18,9 +18,7 @@ Note of Importance, when adding a new document to the tree, make sure to MAKE CL
 .. toctree::
    :maxdepth: 4
 
-   manual
-   devdocs
-   stdlib
+   inthelp/index
 
 
  
