@@ -1,13 +1,13 @@
 .. _stdlib-asset:
 
-.. currentmodule:: Base
+.. currentmodule:: AssetCollection
 
 ******************
  Asset Collections
 ******************
 
 
-Basic functions
+Assets functions
 ---------------
 
 .. function:: length(A)
