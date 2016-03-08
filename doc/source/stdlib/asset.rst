@@ -26,19 +26,19 @@ Basic functions
 	If ``name`` does not exist in ``A`` , it will throw an error:
 	LoadError: The asset collection has no asset named ``name`` 
 
-..function:: getVarForAsset(A, name::AbstractString)
+.. function:: getVarForAsset(A, name::AbstractString)
 
 	Returns the value of the variance of the given asset ``name`` .
 	If ``name`` does not exist in ``A`` , it will throw an error:
 	LoadError: The asset collection has no asset named ``name`` .
 
-..function:: setVarForAsset(A, name::AbstractString, value)
+.. function:: setVarForAsset(A, name::AbstractString, value)
 
 	Returns the ``value`` that was set as the variance of ``name`` in ``A`` .
 	If ``name`` does not exist in ``A`` , it will throw an error:
 	LoadError: The asset collection has no asset named ``name`` 
 
-..function:: getCoVarForAssetPair(A, name1::AbstractString, name2::AbstractString)
+.. function:: getCoVarForAssetPair(A, name1::AbstractString, name2::AbstractString)
 
 	Returns the value of the covariance between the assets ``name1`` and ``name2`` .
 	If ``name1`` does not exist in ``A`` , it will throw an error:
@@ -48,7 +48,7 @@ Basic functions
 	If both ``name1`` and ``name2`` do not exist in ``A`` , it will throw an error for
 	``name1`` as the first error to be encountered.
 
-..function:: setCoVarForAssetPair(A, name1::AbstractString, name2::AbstractString, value)
+.. function:: setCoVarForAssetPair(A, name1::AbstractString, name2::AbstractString, value)
 
 	Returns the ``value`` that was set for the covariance between the assets ``name1`` and ``name2`` .
 	If ``name1`` does not exist in ``A`` , it will throw an error:
@@ -58,31 +58,30 @@ Basic functions
 	If both ``name1`` and ``name2`` do not exist in ``A`` , it will throw an error for
 	``name1`` as the first error to be encountered.
 
-
-..function:: getCovariance(A)
+.. function:: getCovariance(A)
 
 	Returns the Covariance Matrix of Real values as a Matrix{Real} from asset collection ``A`` .
 
-..function:: setCovariance(A, covariance::Matrix{Real})
+.. function:: setCovariance(A, covariance::Matrix{Real})
 
 	Returns the ``covariance`` that is set as the Covariance Matrix of the asset collection ``A`` .
 
-..function:: getReturns(A)
+.. function:: getReturns(A)
 
 	Returns a Vector{Real} of the expected returns from asset collection ``A`` .
 
-..function:: setReturns(A, returns::Vector{Real})
+.. function:: setReturns(A, returns::Vector{Real})
 
 	Returns the ``returns`` that is set as the expected returns of the asset collection ``A`` .
 
-..function:: getNames(A)
+.. function:: getNames(A)
 
 	Returns a Vector{AbstractString} of the asset names from asset collection ``A`` .
 
-..function:: setNames(A, names::Vector{AbstractString})
+.. function:: setNames(A, names::Vector{AbstractString})
 
 	Returns the ``names`` that are set as the asset names of the asset collection ``A`` .
 
-..function:: getAssetAndReturnsFromCSV(filepath::AbstractString)
+.. function:: getAssetAndReturnsFromCSV(filepath::AbstractString)
 
 	Returns a tuple of vectors, with the first element being an asset name vector, and the second element being the expected returns vector.
