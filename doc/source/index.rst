@@ -33,3 +33,21 @@ Getting Started
 
    tut/index
    
+######
+Manual
+######
+
+.. toctree::
+   :maxdepth: 2
+
+   manual/index
+
+
+##################
+Standard Library
+##################
+
+.. toctree::
+   :maxdepth: 2
+
+   stdlib/index
