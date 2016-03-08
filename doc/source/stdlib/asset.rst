@@ -1,7 +1,5 @@
 .. _stdlib-asset:
 
-.. currentmodule:: AssetCollection
-
 ******************
  Asset Collections
 ******************
