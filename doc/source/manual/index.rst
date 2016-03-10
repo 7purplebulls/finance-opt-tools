@@ -9,3 +9,4 @@
 
    introduction
    functions
+   Constraints
