@@ -15,14 +15,32 @@ The basic syntax for creating an AssetsCollection is
 
 Where ``A`` is the variable AssetsCollection that holds the newly created AssetsCollection. ``names`` is a Vector of Strings that holds the names of the asset tickers. ``expected_returns`` is a Vector of Floats that contain the corresponding expected returns of every asset. ``covariance`` is the associated Matrix of Floats for this AssetsCollection.
 
-Once a ``A`` AssetsCollection object is created, it can be modified simply through calling any of the functions listed below:
+Once a ``A`` AssetsCollection object is created, it can be modified by any of the functions below.
 
-Basic Functions
----------------
+Function Descriptions
+----------------------
 
-==================================  ==============================================================================
-Function                            Description
-==================================  ==============================================================================
-:func:`length(A) <length>`          the number of assets in ``A``
-:func:`getReturnForAsset(A, name)`  The expected returns of ``name`` in ``A``
-==================================  ==============================================================================
+============================================================================  ==============================================================================
+Function                                                                      Description
+============================================================================  ==============================================================================
+:func:`length(A) <length>`                                                    The number of assets in ``A`` 
+:func:`getReturnForAsset(A, name) <getReturnForAsset>`                        The expected returns of ``name`` in ``A`` 
+:func:`setReturnForAsset(A, name, value) <setReturnForAsset>`                 Sets ``name`` to ``value``  in ``A``
+:func:`getVarForAsset(A, name) <getVarForAsset>`                              Gets the Variance of ``name`` in ``A`` 
+:func:`setVarForAsset(A, name, value) <setVarForAsset>`                       Sets the Variance of ``name`` to ``value`` in ``A`` 
+:func:`getCoVarForAssetPair(A, name1, name2) <getCoVarForAssetPair>`          Gets the Covariance of ``name1`` and ``name2`` in ``A`` 
+:func:`setCoVarForAssetPair(A, name1, name2, value) <setCoVarForAssetPair>`   Sets the Covariance of ``name1`` and ``name2`` to ``value`` in ``A`` 
+:func:`getCovariance(A) <getCovariance>`                                      Gets the Covariance Matrix of ``A`` 
+:func:`setCovariance(A, covariance) <setCovariance>`                          Sets the Covariance Matrix to ``covariance`` in ``A`` 
+:func:`getReturns(A) <getReturns>`                                            Gets the Vector of Expected Returns in ``A`` 
+:func:`setReturns(A, expected_returns) <setReturns>`                          Sets the Vector of Expected Returns to ``expected_returns`` in ``A`` 
+:func:`getNames(A) <getNames>`                                                Gets the Vector of Names in ``A`` 
+:func:`setNames(A, names) <setNames>`                                         Sets the Vector of Names to ``names`` in ``A`` 
+============================================================================  ==============================================================================
+
+Errors and Warnings
+--------------------
+
+Error messages will stop the execution of any of the above functions and will not result in a change within the AssetsCollection.
+
+Warning messages will result in changes occuring within the AssetsCollection. Warning messages are only there to provide a check against unexpected use that generally are not used, such as setting the Covariance to be Non Positive Semi-Definite.
