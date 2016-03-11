@@ -1,5 +1,7 @@
 .. _man-functions:
 
+.. currentmodule:: Base
+
 ****************
 AssetsCollection
 ****************
