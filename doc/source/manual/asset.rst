@@ -23,6 +23,6 @@ Basic Functions
 ==================================  ==============================================================================
 Function                            Description
 ==================================  ==============================================================================
-:func:`length(A) <length>`                   the number of assets in ``A``
-:func:`getReturnForAsset(A, name) <getReturnForAsset>`  The expected returns of ``name`` in ``A``
+:func:`length(A) <length>`          the number of assets in ``A``
+:func:`getReturnForAsset(A, name)`  The expected returns of ``name`` in ``A``
 ==================================  ==============================================================================
