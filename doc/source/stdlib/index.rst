@@ -10,3 +10,4 @@
    base
    collections
    asset
+   constraints
