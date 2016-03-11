@@ -41,7 +41,10 @@ Manual
 .. toctree::
    :maxdepth: 2
 
-   manual/index
+   manual/introduction
+   manual/asset
+   manual/constraints
+   manual/models
 
 
 .. _stdlib:
@@ -53,4 +56,6 @@ Standard Library
 .. toctree::
    :maxdepth: 2
 
-   stdlib/index
+   stdlib/asset
+   stdlib/models
+   stdlib/import_export
