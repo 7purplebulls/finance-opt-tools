@@ -5,8 +5,8 @@
 
 * :ref:`tut`
 * :ref:`inthelp`
-* :ref:`stdlib`
 * :ref:`manual`
+* :ref:`stdlib`
 
 .. _inthelp:
 
@@ -43,7 +43,9 @@ Manual
 
    manual/index
 
+
 .. _stdlib:
+
 ##################
 Standard Library
 ##################
