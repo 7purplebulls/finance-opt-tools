@@ -1,7 +1,5 @@
 .. _stdlib-import_export:
 
-.. currentmodule:: Base
-
 ******************
 Import and Export
 ******************
