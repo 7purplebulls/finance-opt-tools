@@ -7,7 +7,5 @@
 .. toctree::
    :maxdepth: 1
 
-   base
-   collections
    asset
-   constraints
+   models

@@ -8,6 +8,6 @@
    :maxdepth: 1
 
    introduction
-   functions
    asset
-   Constraints
+   constraints
+   models

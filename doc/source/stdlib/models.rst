@@ -1,12 +1,10 @@
 .. _stdlib-constraints:
 
-.. currentmodule:: Base
-
 *******
 Models
 *******
 
-Simple MVO
+Constructor
 -----------
 
 .. function:: mvo = SimpleMVO(assets, target_return, constraints, short_sale=false)
@@ -20,5 +18,13 @@ Simple MVO
 		4. Short Sale flag
 		This is a boolean indicating whether or not short sale is allowed for the model. It simples defines whether or not weights for assets can drop below zero. 
 
+Getters and Setters
+-------------------
 
+.. function:: getDefault Constraints(m::AbstractModel)
+	Return the default constraints of a given Model as a ConstraintsContainer
+    type
+
+.. function:: getConstraints(m::AbstractModel)
+	Return an array of constraints as expressions
 

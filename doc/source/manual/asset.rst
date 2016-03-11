@@ -33,7 +33,7 @@ Function                                                                      De
 :func:`getCovariance(A) <getCovariance>`                                      Gets the Covariance Matrix of ``A`` 
 :func:`setCovariance(A, covariance) <setCovariance>`                          Sets the Covariance Matrix to ``covariance`` in ``A`` 
 :func:`getReturns(A) <getReturns>`                                            Gets the Vector of Expected Returns in ``A`` 
-:func:`setReturns(A, expected_returns) <setReturns>`                          Sets the Vector of Expected Returns to ``expected_returns`` in ``A`` 
+:func:`setReturns(A, returns) <setReturns>`                                   Sets the Vector of Expected Returns to ``returns`` in ``A`` 
 :func:`getNames(A) <getNames>`                                                Gets the Vector of Names in ``A`` 
 :func:`setNames(A, names) <setNames>`                                         Sets the Vector of Names to ``names`` in ``A`` 
 ============================================================================  ==============================================================================
