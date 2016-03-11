@@ -10,7 +10,7 @@ Assets functions
 
 .. function:: length(A)
 
-	Returns the # of assets in ``A`` as an ``Integer`` 
+	Returns the number of assets in ``A`` as an ``Integer`` 
 
 .. function:: getReturnForAsset(A, name::AbstractString)
 
