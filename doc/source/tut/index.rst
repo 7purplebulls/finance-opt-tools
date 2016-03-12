@@ -15,3 +15,4 @@ Getting Started
   methodsel
   solve
   output
+  getting_started
