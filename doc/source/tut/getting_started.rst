@@ -27,11 +27,10 @@ into the current environment shown below.
 .. code:: julia
 
     # For Windows Users
-    push!(LOAD_PATH, "$(homedir())/Documents/RBC_Capstone/financial-opt-tools/src") #TODO: Change this to be more generic
+    push!(LOAD_PATH, "$(homedir())/Path/To/JuPOT/")
     
     # For Mac Users
-    # push!(LOAD_PATH, "$(homedir())/desktop/financial-opt-tools/src") #TODO Change this to be more Generic
-    print("") # Dont mind these print statements
+    # push!(LOAD_PATH, "/Path/To/JuPOT/")
 
 3. Importing the Package
 
@@ -80,7 +79,6 @@ In this tutorial we will generate our own random financial data.
     end
     
     tickers = [randstring(3) for i in 1:n] # List of asset names
-    print("")
 
 Now that we have our asset list, expected returns, and covariance we can
 now define our Asset Object.
@@ -89,7 +87,6 @@ now define our Asset Object.
 
     # Assets data structure containing, names, expected returns, covarariance
     assets = AssetsCollection(tickers, returns, covariance)
-    print("")
 
 One neat feature of JuPOT is the fact that you can defined multiple sets
 of assets at the same time! This feature exists to allow easy swapping
@@ -116,7 +113,6 @@ built in MVO function set up the following objective function.
 
     target_return = 0.2
     mvo = SimpleMVO(assets, target_return; short_sale=false)
-    print("")
 
 We now have created a simple MVO model object called "mvo". In order to
 run the optimization we call the "optimize" function, passing the MVO
@@ -174,7 +170,6 @@ Asset Group Constraints Example
 
     constraints = Dict((:constraint1 => :(dot(w,tech) <= tech_thresh)),
                        (:constraint2 => :(dot(w,fin) <= Fin_thresh)))
-    print("")
 
 Great! So now we have defined our constraints but we are still missing
 the parameters (ie the values we want for tech\_thresh and Fin\_thresh).
@@ -192,7 +187,6 @@ Defining Parameters Example
     :tech_thresh => 0.3, # this threshold indicates the maximum weight allowed for tech stocks
     :fin=> [1,1,0,0,1,0,1,0,0,0], # This is the labeling vector for finance stocks
     :Fin_thresh => 0.1) # this threshold defines the maximum weight for finance stocks allowed
-    print("")
 
 To illustrate one of the benefits of using JuPOT the next example will
 show how to change a parameter. Say for example, you wish to alter the
@@ -204,7 +198,6 @@ is.
 
     # Remember that we defined our parameters as a dictionary
     parameters[:tech_thresh] = 0.6 # Voila!
-    print("")
 
 Now that we have defined a set of constraints and parameters lets move
 onto how we incorporate these into our MVO object. To add user-defined
@@ -278,6 +271,8 @@ constraints object is defined as a dictionary it is quite simple to
 merge two sets of constraints. Watch out, when you merge constraints to
 create a larger dictionary of constraints don't forget to do the same
 for the parameters.
+
+#TODO: Keep in mind if you have the same symbols in the dictionaries, the later one in the merge function will overwrite the previous ones
 
 .. code:: julia
 

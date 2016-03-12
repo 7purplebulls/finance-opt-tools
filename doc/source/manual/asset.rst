@@ -15,7 +15,7 @@ The basic syntax for creating an AssetsCollection is
 
 Where ``A`` is the variable AssetsCollection that holds the newly created AssetsCollection. ``names`` is a Vector of Strings that holds the names of the asset tickers. ``expected_returns`` is a Vector of Floats that contain the corresponding expected returns of every asset. ``covariance`` is the associated Matrix of Floats for this AssetsCollection.
 
-Once a ``A`` AssetsCollection object is created, it can be modified by any of the functions below.
+Once an ``A`` AssetsCollection object is created, it can be modified by any of the functions below.
 
 Function Descriptions
 ----------------------
@@ -38,9 +38,7 @@ Function                                                                      De
 :func:`setNames(A, names) <setNames>`                                         Sets the Vector of Names to ``names`` in ``A`` 
 ============================================================================  ==============================================================================
 
-Errors and Warnings
---------------------
+Errors
+-------
 
 Error messages will stop the execution of any of the above functions and will not result in a change within the AssetsCollection.
-
-Warning messages will result in changes occuring within the AssetsCollection. Warning messages are only there to provide a check against unexpected use that generally are not used, such as setting the Covariance to be Non Positive Semi-Definite.
