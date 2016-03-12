@@ -1,13 +1,13 @@
 .. _stdlib-constraints:
 
-*******
-Models
-*******
+***************
+Abstract Models
+***************
 
 Constructors
 ------------
 
-.. function:: SimpleMVO(assets, target_return, constraints, short_sale=false)
+.. function:: SimpleMVO(assets, target_return, constraints::, short_sale)
 
 	When setting the simple MVO, there are 4 fields to consider.
 
@@ -30,12 +30,15 @@ Constructors
 Getters and Setters
 -------------------
 
-.. function:: getDefault Constraints(m::AbstractModel)
+.. function:: getDefaultConstraints(M)
 
 	Return the default constraints of a given Model as a ConstraintsContainer
     type
 
-.. function:: getConstraints(m::AbstractModel)
+.. function:: getConstraints(M)
 
 	Return an array of constraints as expressions
+
+.. function:: getObjective(M)
+
 
