@@ -1,7 +1,5 @@
 .. _man-introduction:
 
-.. currentmodule:: Base
-
 **************
  Introduction
 **************
