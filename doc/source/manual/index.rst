@@ -1,8 +1,8 @@
 .. _manual-index:
 
-###############################
- The finance-opt-tools Manual
-###############################
+#################
+ The JuPOT Manual
+#################
 
 .. toctree::
    :maxdepth: 1

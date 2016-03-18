@@ -1,10 +1,12 @@
 .. _tut-index:
 
-###############
-Getting Started
-###############
+##################
+ JuPOT Tutorials
+##################
 
 .. toctree::
    :maxdepth: 1
 
-  getting_started
+   getting_started
+   eff
+   solversel

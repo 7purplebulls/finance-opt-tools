@@ -32,8 +32,7 @@ Getters and Setters
 
 .. function:: getDefaultConstraints(M)
 
-	Return the default constraints of a given Model as a ConstraintsContainer
-    type
+	Return the default constraints of a given Model as a ConstraintsContainer type
 
 .. function:: getConstraints(M)
 

@@ -1,8 +1,8 @@
 .. _stdlib-index:
 
-############################
- The finance-opt-tools Library
-############################
+##################
+ The JuPOT Library
+##################
 
 .. toctree::
    :maxdepth: 1
