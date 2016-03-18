@@ -41,6 +41,16 @@ Getters and Setters
 
 .. function:: getObjective(M)
 
+	Return the objective function of the given Model as an Expr type
+
+.. function:: getSense(M)
+
+    Return the Sense of the Model, Min or Max
+
+.. function:: getVariables(M)
+
+    Return the list of variables in the model
+
 
 Optimize
 ---------
