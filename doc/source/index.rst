@@ -36,7 +36,9 @@ Getting Started
 .. toctree::
    :maxdepth: 2
 
-   tut/index
+   tut/getting_started
+   tut/eff
+   tut/solversel
 
 .. _manual:
 
