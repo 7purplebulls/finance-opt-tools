@@ -12,4 +12,3 @@
    constraints
    models
    import_export
-   jupot
