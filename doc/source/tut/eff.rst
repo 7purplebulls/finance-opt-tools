@@ -13,7 +13,7 @@ Refer to the :ref:`Getting Started <tut-getting_started>` tutorial to see how to
 
 This tutorial will also utilze the `PyPlot <https://github.com/stevengj/PyPlot.jl>`_ julia package. 
 Follow the installation instruction on the page to install PyPlot. 
-If you don't wish to utilize PyPlot, then just remove the `using PyPlot` line in the code below, and skip the :ref:`plotting <plotting>` stage of the tutorial.
+If you don't wish to utilize PyPlot, then just remove the `using PyPlot` line in the code below, and skip the :ref:`plotting <plotting-label>` stage of the tutorial.
 
 To get started, we will generate some randomized data as the assets in this tutorial. 
 We will also generate the same set of constraints as in the :ref:`Getting Started <tut-getting_started>` tutorial.
@@ -128,7 +128,7 @@ As we defined in the function.
 Plotting the Efficient Frontier
 -------------------------------
 
-.. _plotting::
+.. _plotting-label::
 
 Finally let's plot the efficient frontier to see how it looks!
 
