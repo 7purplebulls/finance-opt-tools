@@ -1,8 +1,8 @@
 .. _stdlib-asset:
 
-******************
- Asset Collections
-******************
+*************************
+ AssetCollections StdLib
+*************************
 
 
 Basic functions
