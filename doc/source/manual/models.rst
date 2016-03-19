@@ -24,6 +24,7 @@ Target_Return   Expected target return of portfolio post optimization
 Constraints     Any non-model specific constraints to be used in optimization         
 Short_Sale      A boolean indicating whether or not short selling will be allowed 
 ==============  ==================================================================
+
 Robust Mean Variance Optimization
 ----------------------------------
 
@@ -44,6 +45,10 @@ Uncertainty_Set
 Uncertainty_Set_Size                                                                   
 Short_Sale            A boolean indicating whether or not short selling will be allowed 
 ====================  ==================================================================
+
+.. comment
+
+	TODO: Uncertainty_Set stuff
 
 Minimum-Variance Optimization
 ----------------------------------

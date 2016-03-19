@@ -128,7 +128,7 @@ As we defined in the function.
 Plotting the Efficient Frontier
 -------------------------------
 
-.. _plotting-label::
+.. _plotting-label:
 
 Finally let's plot the efficient frontier to see how it looks!
 
