@@ -16,13 +16,14 @@ In previous manuals you will have already learned about creating assets groups a
 	mvo = SimpleMVO(Asset_Group, target_return, constraints, short_sale)
 	optimize(mvo, parameters)
 
-| Variable Name | Description                                                      | 
-|---------------|------------------------------------------------------------------| 
-| Asset Group   |Set of Asset returns and covarianced inputtedf or analysis        | 
-| Target_Return |Expected target return of portfolio post optimization             |   
-| Constraints   |Any non-model specific constraints to be used in optimization     |    
-| Short_Sale    |A boolean indicating whether or not short selling will be allowed |
-
+==============  ==================================================================
+Variable Name   Description                                                      
+==============  ==================================================================
+Asset Group     Set of Asset returns and covarianced inputtedf or analysis         
+Target_Return   Expected target return of portfolio post optimization                
+Constraints     Any non-model specific constraints to be used in optimization         
+Short_Sale      A boolean indicating whether or not short selling will be allowed 
+==============  ==================================================================
 Robust Mean Variance Optimization
 ----------------------------------
 
