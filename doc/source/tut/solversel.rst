@@ -30,7 +30,7 @@ This would install the ``Solver Object`` required to identify which solver you w
 
 	WARNING: both JuPOT and Gurobi export "optimize"; uses of it in module Main must be qualified
 
-	If it doesn't occur here, it should occur when we call the ``optimize`` function.
+	If it doesn't occur here, it should occur when we call the :func:`optimize` function.
 	This problem is because both JuPOT and Gurobi packages have an ``optimize`` function and Julia
 	doesn't necessarily understand exactly who to use.
 
@@ -74,12 +74,12 @@ When you want to use a specific solver, you need to create a ``Solver Object`` f
 
 	gurobi_solver = GurobiSolver()
 
-Then you pass the ``Solver Object`` you have created called ``gurobi_solver`` into the ``optimize`` function.
+Then you pass the ``Solver Object`` you have created called ``gurobi_solver`` into the :func:`optimize` function.
 
 .. code:: julia
 
 	result = JuPOT.optimize(mvo; solver=gurobi_solver)
 
-Passing of the solver object is done by utilizing a ``;`` between the regular input parameters of the ``optimize`` function and the solver object input.
+Passing of the solver object is done by utilizing a ``;`` between the regular input parameters of the :func:`optimize` function and the solver object input.
 
 Congratulations, you can now specify which solver you want to use when you optimize!

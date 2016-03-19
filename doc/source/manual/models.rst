@@ -86,3 +86,12 @@ Alpha
 Short_Sale      A boolean indicating whether or not short selling will be allowed 
 ==============  ==================================================================
 
+
+Optimize Function
+-----------------
+
+The :func:`optimize(M, parameters; solver=Default) <optimize>` function will optimize 
+the models above using a solver with the parameters.
+
+To change solvers, refer to the :ref:`solver select <solver-sel>` tutorial.
+

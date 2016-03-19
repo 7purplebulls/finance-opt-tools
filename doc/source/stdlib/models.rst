@@ -60,7 +60,7 @@ Constructors
 Optimize Function
 ------------------
 
-.. function:: optimize(M, parameters::Dict{Symbol,Any}, solver=JuMP.UnsetSolver())
+.. function:: optimize(M, parameters::Dict{Symbol,Any}, solver=Default)
 
 	Optimizes the model ``M`` using the values in the dictionary of ``parameters`` using a ``solver`` , and returns a tuple of the objective value and an array of the weights. The ``solver`` is an optional ``Solver Object`` that can be passed in to define which solver to use while optimizing. The default is to let JuMP decide which solver to use.
 
