@@ -35,8 +35,6 @@ All constraints are defined as unique dictionaries so in order to modify an exis
 
 	parameters[:tech_thresh] = 0.04
 
-
-
 Deleting Constraints
 ----------------------
 
@@ -51,4 +49,22 @@ In order to delete a constraint, users imply have to delete the constraint name 
 In the example above, we have now delelted ``constraint1`` from the model and removed all parameters associated with ``constraint1``.
 
 
+Merging Constraints
+-------------------
+
+You can merge two sets of constraints together. 
+
+.. code:: julia
+
+	constraints_1 = [symbol("x$i") => :(min_thresh <= w[$i]) for i=1:n] # this sets a minimum weight for each asset
+	constraints_2 = [symbol("y$i") => :( w[$i] <= max_thresh) for i=1:n] # this sets a maximum weight for each asset
+	
+	constraints = merge(constraints_1,constraints_2) # you just merged two sets of constraints
+
+.. note::
+
+	If you have the exact same ``symbol`` as the key in both ``constraints_1`` and ``constraints_2`` then the merged ``constraints`` will only
+	contain the version from ``constraints_2``.
+
+For more information about how to manipulate the Dictionaries we use for holding the constraints. Refer to `Julia's Documentation <http://docs.julialang.org/en/release-0.4/stdlib/collections/#Base.Dict>`_ or the `Julia Wiki <https://en.wikibooks.org/wiki/Introducing_Julia/Dictionaries_and_sets>`_ .
        
