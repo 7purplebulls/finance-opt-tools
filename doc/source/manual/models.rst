@@ -1,7 +1,5 @@
 .. _manual-models:
 
-.. currentmodule:: Base
-
 ******
 Models
 ******
@@ -28,6 +26,7 @@ In previous manuals you will have already learned about creating assets groups a
 Robust Mean Variance Optimization
 ----------------------------------
 
+<<<<<<< HEAD
 Other methods of optimization such as Robust Mean Variance Optimization can also be applied onto asset and constraint groups.
 
 .. code-block:: julia
@@ -53,8 +52,8 @@ In minimum-variance optmization, the goal is to minize the
 	mvar = MinVarO(Asset_Group, constraints, short_sale)
 	optimize(mvar, parameters) 
 
- Variable Name | Description                                                      | 
-| ------------- |:----------------------------------------------------------------:| 
+ Variable Name| Description                                                      | 
+| ------------|:----------------------------------------------------------------:| 
 | Asset Group |Set of Asset returns and covarianced inputtedf or analysis        | 
 | Constraints |Any non-model specific constraints to be used in optimization     |    
 | Short_Sale  |A boolean indicating whether or not short selling will be allowed |
@@ -74,3 +73,5 @@ Conditional Value at Risk (CVaR) Optimization
 | Constraints |Any non-model specific constraints to be used in optimization     |  
 | Alpha       |                                                                  |    
 | Short_Sale  |A boolean indicating whether or not short selling will be allowed |
+=======
+>>>>>>> ac3804022cb64d5b29cccb65f0a9681f17571794
