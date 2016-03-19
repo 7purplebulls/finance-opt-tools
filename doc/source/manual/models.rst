@@ -17,7 +17,7 @@ In previous manuals you will have already learned about creating assets groups a
 	optimize(mvo, parameters)
 
 | Variable Name | Description                                                      | 
-| ------------- |:----------------------------------------------------------------:| 
+|---------------|------------------------------------------------------------------| 
 | Asset Group   |Set of Asset returns and covarianced inputtedf or analysis        | 
 | Target_Return |Expected target return of portfolio post optimization             |   
 | Constraints   |Any non-model specific constraints to be used in optimization     |    
@@ -26,7 +26,6 @@ In previous manuals you will have already learned about creating assets groups a
 Robust Mean Variance Optimization
 ----------------------------------
 
-<<<<<<< HEAD
 Other methods of optimization such as Robust Mean Variance Optimization can also be applied onto asset and constraint groups.
 
 .. code-block:: julia
@@ -35,7 +34,7 @@ Other methods of optimization such as Robust Mean Variance Optimization can also
 	optimize(rmvo, parameters) 
 
 | Variable Name       | Description                                                      | 
-| -------------       |:----------------------------------------------------------------:| 
+|---------------------|------------------------------------------------------------------| 
 | Asset Group         |Set of Asset returns and covarianced inputtedf or analysis        | 
 | Target_Return       |Expected target return of portfolio post optimization             |   
 | Constraints         |Any non-model specific constraints to be used in optimization     | 
@@ -46,14 +45,16 @@ Other methods of optimization such as Robust Mean Variance Optimization can also
 Minimum-Variance Optimization
 ----------------------------------
 
-In minimum-variance optmization, the goal is to minize the 
+In minimum-variance optmization, the goal is to minize the risk of the portfolio. 
+
 .. code-block:: julia
 
 	mvar = MinVarO(Asset_Group, constraints, short_sale)
 	optimize(mvar, parameters) 
 
- Variable Name| Description                                                      | 
-| ------------|:----------------------------------------------------------------:| 
+ 
+|Variable Name| Description                                                      | 
+|-------------|------------------------------------------------------------------| 
 | Asset Group |Set of Asset returns and covarianced inputtedf or analysis        | 
 | Constraints |Any non-model specific constraints to be used in optimization     |    
 | Short_Sale  |A boolean indicating whether or not short selling will be allowed |
@@ -66,12 +67,11 @@ Conditional Value at Risk (CVaR) Optimization
 	cvar = CVaRO(Asset_Group, losses, constraints, alpha, short_sale)
 	optimize(cvar, parameters) 
 
- Variable Name | Description                                                      | 
-| ------------- |:----------------------------------------------------------------:| 
-| Asset Group |Set of Asset returns and covarianced inputtedf or analysis        | 
-| Losses      |                                                                  |   
-| Constraints |Any non-model specific constraints to be used in optimization     |  
-| Alpha       |                                                                  |    
-| Short_Sale  |A boolean indicating whether or not short selling will be allowed |
-=======
->>>>>>> ac3804022cb64d5b29cccb65f0a9681f17571794
+ Variable Name | Description                                                     | 
+|--------------|-----------------------------------------------------------------| 
+| Asset Group  |Set of Asset returns and covarianced inputtedf or analysis        | 
+| Losses       |                                                                  |   
+| Constraints  |Any non-model specific constraints to be used in optimization     |  
+| Alpha        |                                                                  |    
+| Short_Sale   |A boolean indicating whether or not short selling will be allowed |
+
