@@ -57,3 +57,4 @@ Optimize
 .. function:: optimize(M)
 
 	Optimizes the Model M using the specified solver, and returns a Tuple of the Objective Value and an Array of the Weights
+
