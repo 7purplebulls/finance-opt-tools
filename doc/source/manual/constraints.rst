@@ -1,4 +1,4 @@
-.. _manual-constraints:
+.. _man-constraints:
 
 **********************
 Constraint Definition

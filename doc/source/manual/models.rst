@@ -1,4 +1,4 @@
-.. _manual-models:
+.. _man-models:
 
 ******
 Models
