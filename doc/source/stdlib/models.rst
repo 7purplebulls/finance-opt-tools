@@ -32,11 +32,11 @@ Constructors
 Optimize
 ------------
 
-.. function:: getDefaultConstraints(M)
+.. function:: optimize(M, parameters)
 
 	Optimizes the model ``M`` using the values in the dictionary of ``parameters`` using a solver, and returns a tuple of the objective value and an array of the weights.
 
-.. function:: optimize(M, parameters)
+.. function:: optimizeModel(M, parameters)
 
 	Optimizes the model ``M`` using the values in the dictionary of ``parameters`` using a solver, and returns a tuple of the objective value and an array of the weights.
 
