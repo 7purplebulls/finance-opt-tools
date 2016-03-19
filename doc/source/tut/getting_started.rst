@@ -294,9 +294,7 @@ for the parameters.
 
 	Keep in mind if you have the same symbols in the dictionaries, the later one in the merge function will overwrite the previous ones.
 
-	#TODO:
-
-	See the Julia Official Documentation for more information.
+	See the `Julia Official Documentation <http://docs.julialang.org/en/release-0.4/>`_ for more information.
 
 
 .. code:: julia
