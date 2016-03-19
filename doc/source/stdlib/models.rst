@@ -27,8 +27,14 @@ Constructors
 	
 	This is a boolean indicating whether or not short sale is allowed for the model. It simples defines whether or not weights for assets can drop below zero.
 
+
+
 Optimize
--------------
+------------
+
+.. function:: getDefaultConstraints(M)
+
+	Optimizes the model ``M`` using the values in the dictionary of ``parameters`` using a solver, and returns a tuple of the objective value and an array of the weights.
 
 .. function:: optimize(M, parameters)
 
