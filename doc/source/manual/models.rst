@@ -34,14 +34,16 @@ Other methods of optimization such as Robust Mean Variance Optimization can also
 	rmvo = RobustMVO(Asset_Group, target_return, constraints, uncertainty_set, uncertainty_set_size, short_sale)
 	optimize(rmvo, parameters) 
 
-| Variable Name       | Description                                                      | 
-|---------------------|------------------------------------------------------------------| 
-| Asset Group         |Set of Asset returns and covarianced inputtedf or analysis        | 
-| Target_Return       |Expected target return of portfolio post optimization             |   
-| Constraints         |Any non-model specific constraints to be used in optimization     | 
-| Uncertainty_Set     |                                                                  |
-| Uncertainty_Set_Size|                                                                  |
-| Short_Sale          |A boolean indicating whether or not short selling will be allowed |
+====================  ==================================================================
+Variable Name         Description                                                      
+====================  ==================================================================
+Asset Group           Set of Asset returns and covarianced inputtedf or analysis         
+Target_Return         Expected target return of portfolio post optimization                
+Constraints           Any non-model specific constraints to be used in optimization      
+Uncertainty_Set                                                                         
+Uncertainty_Set_Size                                                                   
+Short_Sale            A boolean indicating whether or not short selling will be allowed 
+====================  ==================================================================
 
 Minimum-Variance Optimization
 ----------------------------------
@@ -53,12 +55,13 @@ In minimum-variance optmization, the goal is to minize the risk of the portfolio
 	mvar = MinVarO(Asset_Group, constraints, short_sale)
 	optimize(mvar, parameters) 
 
- 
-|Variable Name| Description                                                      | 
-|-------------|------------------------------------------------------------------| 
-| Asset Group |Set of Asset returns and covarianced inputtedf or analysis        | 
-| Constraints |Any non-model specific constraints to be used in optimization     |    
-| Short_Sale  |A boolean indicating whether or not short selling will be allowed |
+==============  ================================================================== 
+Variable Name   Description                                                      
+==============  ==================================================================
+Asset Group     Set of Asset returns and covarianced inputtedf or analysis        
+Constraints     Any non-model specific constraints to be used in optimization         
+Short_Sale      A boolean indicating whether or not short selling will be allowed 
+==============  ==================================================================
 
 Conditional Value at Risk (CVaR) Optimization
 ----------------------------------------------
@@ -68,11 +71,13 @@ Conditional Value at Risk (CVaR) Optimization
 	cvar = CVaRO(Asset_Group, losses, constraints, alpha, short_sale)
 	optimize(cvar, parameters) 
 
- Variable Name | Description                                                     | 
-|--------------|-----------------------------------------------------------------| 
-| Asset Group  |Set of Asset returns and covarianced inputtedf or analysis        | 
-| Losses       |                                                                  |   
-| Constraints  |Any non-model specific constraints to be used in optimization     |  
-| Alpha        |                                                                  |    
-| Short_Sale   |A boolean indicating whether or not short selling will be allowed |
+==============  ================================================================== 
+Variable Name   Description                                                     
+==============  ==================================================================
+Asset Group     Set of Asset returns and covarianced inputtedf or analysis         
+Losses                                                                            
+Constraints     Any non-model specific constraints to be used in optimization       
+Alpha                                                                              
+Short_Sale      A boolean indicating whether or not short selling will be allowed 
+==============  ==================================================================
 
