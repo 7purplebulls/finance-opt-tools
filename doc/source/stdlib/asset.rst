@@ -92,3 +92,5 @@ Getters and Setters
 .. function:: setNames(A, names::Vector{AbstractString})
 
 	Returns the ``names`` that are set as the asset names of the asset collection ``A`` .
+
+	

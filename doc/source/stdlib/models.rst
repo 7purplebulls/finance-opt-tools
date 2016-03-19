@@ -13,7 +13,7 @@ Constructors
 
 	1. Assets
 	
-	The ``asset`` field indicates the matrix of asset returns and covariances to be inputted into the model
+	The ``asset`` field indicates the matrix of asset returns and covariances to be inputted into the model.
 	
 	2. Target Return
 	
@@ -21,7 +21,7 @@ Constructors
 	
 	3. Constraints
 	
-	The constraints define the set of constraints, outside of implied simple MVO constraints, to be applied during model optimization. 
+	The constraints define the set of constraints, outside of implied simple MVO constraints, to be applied during model optimization.
 	
 	4. Short Sale flag
 	
@@ -32,23 +32,23 @@ Getters and Setters
 
 .. function:: getDefaultConstraints(M)
 
-	Return the default constraints of a given Model as a ConstraintsContainer type
+	Return the default constraints of a given Model as a ConstraintsContainer type.
 
 .. function:: getConstraints(M)
 
-	Return an array of constraints as expressions
+	Return an array of constraints as expressions.
 
 .. function:: getObjective(M)
 
-	Return the objective function of the given Model as an Expr type
+	Return the objective function of the given Model as an Expr type.
 
 .. function:: getSense(M)
 
-    Return the Sense of the Model, Min or Max
+    Return the Sense of the Model, Min or Max.
 
 .. function:: getVariables(M)
 
-    Return the list of variables in the model
+    Return the list of variables in the model.
 
 
 Optimize
@@ -56,5 +56,5 @@ Optimize
 
 .. function:: optimize(M)
 
-	Optimizes the Model M using the specified solver, and returns a Tuple of the Objective Value and an Array of the Weights
+	Optimizes the model ``M`` using the specified solver, and returns a tuple of the objective value and an array of the weights.
 
