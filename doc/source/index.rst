@@ -33,6 +33,7 @@ Manual
    manual/asset
    manual/constraints
    manual/models
+   manual/import_export
 
 
 .. _stdlib:
