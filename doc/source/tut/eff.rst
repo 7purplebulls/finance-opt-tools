@@ -9,14 +9,14 @@ frontiers with the results. This tutorial will guide you through making an effic
 function, that will allow you to test a SimpleMVO model with multiple target returns values 
 to build your efficient frontier. 
 
-Refer to the :ref:`Getting Started <_tut-getting_started>` tutorial to see how to import the package.
+Refer to the :ref:`Getting Started <tut-getting_started>` tutorial to see how to import the package.
 
 This tutorial will also utilze the `PyPlot <https://github.com/stevengj/PyPlot.jl>`_ julia package. 
 Follow the installation instruction on the page to install PyPlot. 
-If you don't wish to utilize PyPlot, then just remove the `using PyPlot` line in the code below, and skip the :ref:`plotting <_plotting>` stage of the tutorial.
+If you don't wish to utilize PyPlot, then just remove the `using PyPlot` line in the code below, and skip the :ref:`plotting <plotting>` stage of the tutorial.
 
 To get started, we will generate some randomized data as the assets in this tutorial. 
-We will also generate the same set of constraints as in the :ref:`Getting Started <_tut-getting_started>` tutorial.
+We will also generate the same set of constraints as in the :ref:`Getting Started <tut-getting_started>` tutorial.
 
 .. code:: julia
     
