@@ -57,3 +57,4 @@ Optimize
 
 	Optimizes the model ``M`` using the values in the dictionary of ``parameters`` using a solver, and returns a tuple of the objective value and an array of the weights.
 
+.. try making a comment after to see if it will activate the above
