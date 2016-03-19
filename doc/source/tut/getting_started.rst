@@ -125,7 +125,7 @@ built in MVO function set up the following objective function.
 	mvo = SimpleMVO(assets, target_return; short_sale=false)
 
 We now have created a simple MVO model object called "mvo". In order to
-run the optimization we call the :ref:`optimize` function, passing the MVO
+run the optimization we call the :func:`optimize` function, passing the MVO
 object as a parameter. The printed output represents the optimized
 weights for the defined assets given their expected returns and
 covariances.
@@ -133,7 +133,6 @@ covariances.
 .. code:: julia
 
 	optimize(mvo)
-
 
 
 .. parsed-literal::
