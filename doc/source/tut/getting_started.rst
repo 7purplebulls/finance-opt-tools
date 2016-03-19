@@ -1,6 +1,12 @@
 .. _tut-getting_started:
 
 
+****************
+Getting Started
+****************
+
+
+
 Importing JuPot
 ---------------
 

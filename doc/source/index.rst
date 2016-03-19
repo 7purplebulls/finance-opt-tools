@@ -33,7 +33,6 @@ Manual
    manual/asset
    manual/constraints
    manual/models
-   manual/jupot
 
 
 .. _stdlib:
