@@ -1,4 +1,4 @@
-.. _man-functions:
+.. _man-assets:
 
 ****************
 AssetsCollection

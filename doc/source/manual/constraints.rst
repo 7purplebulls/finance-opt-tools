@@ -67,4 +67,5 @@ You can merge two sets of constraints together.
 	contain the version from ``constraints_2``.
 
 For more information about how to manipulate the Dictionaries we use for holding the constraints. Refer to `Julia's Documentation <http://docs.julialang.org/en/release-0.4/stdlib/collections/#Base.Dict>`_ or the `Julia Wiki <https://en.wikibooks.org/wiki/Introducing_Julia/Dictionaries_and_sets>`_ .
+
        
