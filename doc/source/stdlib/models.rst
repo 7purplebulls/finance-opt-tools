@@ -25,36 +25,35 @@ Constructors
 	
 	4. Short Sale flag
 	
-	This is a boolean indicating whether or not short sale is allowed for the model. It simples defines whether or not weights for assets can drop below zero. 
+	This is a boolean indicating whether or not short sale is allowed for the model. It simples defines whether or not weights for assets can drop below zero.
 
 Getters and Setters
 -------------------
 
 .. function:: getDefaultConstraints(M)
 
-	Return the default constraints of a given Model as a ConstraintsContainer type.
+	Return the default constraints of model ``M`` as a ConstraintsContainer type.
 
 .. function:: getConstraints(M)
 
-	Return an array of constraints as expressions.
+	Return an array of constraints as expressions for model ``M`` .
 
 .. function:: getObjective(M)
 
-	Return the objective function of the given Model as an Expr type.
+	Return the objective function of model ``M`` as an Expr type.
 
 .. function:: getSense(M)
 
-    Return the Sense of the Model, Min or Max.
+    Return the Sense of the model ``M`` , Min or Max.
 
 .. function:: getVariables(M)
 
-    Return the list of variables in the model.
-
+    Return the list of variables in the model ``M`` .
 
 Optimize
----------
+--------
 
 .. function:: optimize(M)
 
-	Optimizes the model ``M`` using the specified solver, and returns a tuple of the objective value and an array of the weights.
+	Optimizes the model ``M`` using a solver, and returns a tuple of the objective value and an array of the weights.
 
