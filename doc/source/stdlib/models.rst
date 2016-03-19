@@ -27,6 +27,13 @@ Constructors
 	
 	This is a boolean indicating whether or not short sale is allowed for the model. It simples defines whether or not weights for assets can drop below zero.
 
+Optimize
+-------------
+
+.. function:: optimize(M, parameters)
+
+	Optimizes the model ``M`` using the values in the dictionary of ``parameters`` using a solver, and returns a tuple of the objective value and an array of the weights.
+
 Getters and Setters
 -------------------
 
@@ -50,11 +57,3 @@ Getters and Setters
 
     Return the list of variables in the model ``M`` .
 
-Optimize
--------------
-
-.. function:: optimize(M, parameters)
-
-	Optimizes the model ``M`` using the values in the dictionary of ``parameters`` using a solver, and returns a tuple of the objective value and an array of the weights.
-
-.. try making a comment after to see if it will activate the above
