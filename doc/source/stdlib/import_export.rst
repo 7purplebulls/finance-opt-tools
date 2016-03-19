@@ -15,3 +15,5 @@ Basic functions
 .. function:: exportModelResultsToCSV(result::Tuple{R,Array{R,1}}, filepath::AbstractString)
 
 	Returns true when properly exported. Takes the output of the optimize function and exports it to the filepath given.
+
+	

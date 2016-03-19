@@ -51,7 +51,7 @@ Getters and Setters
     Return the list of variables in the model ``M`` .
 
 Optimize
---------
+-------------
 
 .. function:: optimize(M)
 
