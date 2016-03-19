@@ -7,7 +7,7 @@ Abstract Models
 Constructors
 ------------
 
-.. function:: SimpleMVO(assets, target_return, constraints::, short_sale)
+.. function:: SimpleMVO(assets, target_return, constraints, short_sale)
 
 	When setting the simple MVO, there are 4 fields to consider.
 
@@ -53,7 +53,7 @@ Getters and Setters
 Optimize
 -------------
 
-.. function:: optimize(M)
+.. function:: optimize(M, parameters)
 
-	Optimizes the model ``M`` using a solver, and returns a tuple of the objective value and an array of the weights.
+	Optimizes the model ``M`` using the values in the dictionary of ``parameters`` using a solver, and returns a tuple of the objective value and an array of the weights.
 
