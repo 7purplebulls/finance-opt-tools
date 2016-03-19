@@ -16,6 +16,7 @@ Getting Started
 .. toctree::
    :maxdepth: 2
 
+   manual/introduction
    tut/getting_started
    tut/eff
    tut/solversel
@@ -29,7 +30,6 @@ Manual
 .. toctree::
    :maxdepth: 2
 
-   manual/introduction
    manual/asset
    manual/constraints
    manual/models
