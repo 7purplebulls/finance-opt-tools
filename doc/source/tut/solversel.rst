@@ -24,24 +24,24 @@ This would install the ``Solver Object`` required to identify which solver you w
 	using Gurobi
 	using JuPOT
 
-.. warning::
+This might give you a warning along the lines of:
 
-	This might give you a warning along the lines of:
+.. warning::
 
 	WARNING: both JuPOT and Gurobi export "optimize"; uses of it in module Main must be qualified
 
-	If it doesn't occur here, it should occur when we call the :func:`optimize` function.
-	This problem is because both JuPOT and Gurobi packages have an ``optimize`` function and Julia
-	doesn't necessarily understand exactly who to use.
+If it doesn't occur here, it should occur when we call the :func:`optimize` function.
+This problem is because both JuPOT and Gurobi packages have an ``optimize`` function and Julia
+doesn't necessarily understand exactly who to use.
 
-	This problem is generally countered by adding the name of the package you are using ahead of
-	the function being called like:
+This problem is generally countered by adding the name of the package you are using ahead of
+the function being called like:
 
-	.. code:: julia
+.. code:: julia
 
-		JuPOT.optimize(mvo)
+	JuPOT.optimize(mvo)
 
-	Which would identify clearly which optimize function is being called to Julia.
+Which would identify clearly which optimize function is being called to Julia.
 
 After properly setting up the environment, we now generate a set of data for a sample SimpleMVO example.
 
