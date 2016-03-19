@@ -1,7 +1,5 @@
 .. _manual-models:
 
-.. currentmodule:: Base
-
 ******
 Models
 ******
@@ -14,3 +12,4 @@ In order to generate
 
 Robust Mean Variance Optimization
 ----------------------------------
+
