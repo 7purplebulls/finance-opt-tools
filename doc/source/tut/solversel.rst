@@ -1,8 +1,8 @@
 .. _tut-solversel:
 
-*************
-Solver Select
-*************
+**********************
+Solver Select Tutorial
+**********************
 
 JuPOT gives you the option to choose between solvers that you want to optimize with.
 
